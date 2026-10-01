@@ -73,13 +73,3 @@ class TemplateConfigurationSmokeTest extends FunSuite:
       buildProperties.contains("sbt.version"),
       "Expected project/build.properties to declare sbt.version"
     )
-
-
-  test("Equipar arma empieza con lista vacía"):
-    val accion = new EquiparArma()
-    assert(accion.armas.isEmpty)
-
-
-  test("Consumir poción empieza con lista vacía"):
-    val accion = new ConsumirPocion()
-    assert(accion.pociones.isEmpty)

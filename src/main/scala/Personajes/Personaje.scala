@@ -3,6 +3,7 @@ package Personajes
 import cl.uchile.dcc.Armamento.Arma
 import cl.uchile.dcc.Pociones.Pocion
 import scala.collection.mutable.ListBuffer
+import cl.uchile.dcc.ProgramadorTurnos.Unidad
 
 abstract class Personaje(val nombre: String,
                          val puntosDeVida: Int,
@@ -10,7 +11,7 @@ abstract class Personaje(val nombre: String,
                          val peso: Int,
                          var arma: ListBuffer[Arma] = ListBuffer[Arma](),
                          var inventario: ListBuffer[Pocion] = ListBuffer[Pocion]()
-                        )
+                        ) extends Unidad
 
 abstract class PersonajeMagico( nombre: String,
                                 puntosDeVida: Int,
