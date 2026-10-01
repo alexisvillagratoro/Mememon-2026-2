@@ -12,7 +12,7 @@ abstract class ArmaMagica (nombre: String,
                             PuntosDeAtaque: Int,
                             peso: Int,
                             owner: Personaje,
-                            PuntosDeAtaqueMagico: Int
+                            val PuntosDeAtaqueMagico: Int
                           ) extends Arma(nombre, PuntosDeAtaque, peso, owner)
 
 class Varita( nombre: String,

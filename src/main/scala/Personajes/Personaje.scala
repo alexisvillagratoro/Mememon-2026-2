@@ -16,7 +16,7 @@ abstract class PersonajeMagico( nombre: String,
                                 puntosDeVida: Int,
                                 defensa: Int,
                                 peso: Int,
-                                puntosMana: Int,
+                                val puntosMana: Int,
                                 arma: ListBuffer[Arma] = ListBuffer[Arma](),
                                 inventario: ListBuffer[Pocion] = ListBuffer[Pocion]()
                               ) extends Personaje(nombre, puntosDeVida, defensa, peso, arma, inventario)
@@ -53,7 +53,7 @@ class MagoNegro( nombre: String,
                  puntosMana: Int,
                  arma: ListBuffer[Arma] = ListBuffer[Arma](),
                  inventario: ListBuffer[Pocion] = ListBuffer[Pocion]()
-               ) extends PersonajeMagico(nombre, puntosDeVida, defensa, peso, puntosMana, arma)
+               ) extends PersonajeMagico(nombre, puntosDeVida, defensa, peso, puntosMana, arma, inventario)
 
 class MagoBlanco( nombre: String,
                   puntosDeVida: Int,
@@ -62,5 +62,5 @@ class MagoBlanco( nombre: String,
                   puntosMana: Int,
                   arma: ListBuffer[Arma] = ListBuffer[Arma](),
                   inventario: ListBuffer[Pocion] = ListBuffer[Pocion]()
-                ) extends PersonajeMagico(nombre, puntosDeVida, defensa, peso, puntosMana, arma)
+                ) extends PersonajeMagico(nombre, puntosDeVida, defensa, peso, puntosMana, arma, inventario)
 

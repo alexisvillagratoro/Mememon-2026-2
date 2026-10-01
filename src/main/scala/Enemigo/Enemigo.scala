@@ -1,5 +1,5 @@
 package cl.uchile.dcc
-package enemigo
+package Enemigo
 
 class Enemigo(val nombre: String,
               val PuntosDeVida: Int,
