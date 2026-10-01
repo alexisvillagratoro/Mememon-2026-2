@@ -11,7 +11,13 @@ abstract class Personaje(val nombre: String,
                          val peso: Int,
                          var arma: ListBuffer[Arma] = ListBuffer[Arma](),
                          var inventario: ListBuffer[Pocion] = ListBuffer[Pocion]()
-                        ) extends Unidad
+                        ) extends Unidad:
+                        
+                        def barraMaxima: Int =
+                          if arma.isEmpty then
+                            peso
+                          else
+                            peso + arma(0).peso  
 
 abstract class PersonajeMagico( nombre: String,
                                 puntosDeVida: Int,

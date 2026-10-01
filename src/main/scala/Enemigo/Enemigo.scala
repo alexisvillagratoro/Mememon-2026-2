@@ -7,6 +7,8 @@ class Enemigo(val nombre: String,
               val ataque: Int,
               val defensa: Int,
               val peso: Int
-             ) extends Unidad
+             ) extends Unidad:
+              def barraMaxima: Int =
+                peso
 
 

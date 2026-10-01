@@ -5,6 +5,9 @@ package ProgramadorTurnos
 trait Unidad:
       val peso: Int
       var barraDeAccion: Int = 0
+      var BarraMaxima: Int = 0
+      
+      def barraMaxima: Int
 
       def reiniciarBarra(): Unit =
         barraDeAccion = 0
